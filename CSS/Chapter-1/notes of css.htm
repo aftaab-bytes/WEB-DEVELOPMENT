@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        body {
+            background-color: black;
+        }
+
+        #voilet {
+            background-color: violet;
+        }
+
+        .brown {
+            background-color: brown;
+            color: bisque
+        }
+
+        .content {
+            color: rgb(200, 255, 80);
+        }
+
+        .heading {
+            color: aqua;
+        }
+
+        .sub-heading {
+            color: blue
+        }
+
+        .internal-heading {
+            color: red;
+            background-color: grey;
+        }
+
+        .note {
+            color: violet;
+        }
+    </style> -->
+
+</head>
+
+<body>
+    <div class="heading">
+        <u>
+            <h1>CSS (Cascading Style Sheet)</h1>
+        </u>
+    </div>
+
+    <div class="sub-heading">
+        <u>
+            <h3>Need of CSS</h3>
+        </u>
+    </div>
+    <div class="content">
+        <p>We Need CSS to beautify and making a better U.I and also responsiveness </p>
+        <div class="note">
+            <p1>Note: <u>We can have two elements of same class but no two elements should have same id</u></p1>
+        </div>
+        
+    </div>
+
+    <div class="sub-heading">
+        <u><i>
+                <h3>Using css for id and class</h3>
+            </i></u>
+    </div>
+    <div class="internal-heading">
+        <h4>FOR "id"</h4>
+    </div>
+    <div class="content">
+        <p>"To target any of the id we use "#" to address any id eg:- #idname."</p>
+    </div>
+
+
+    <div id="voilet">
+        this is voilet used for id
+    </div>
+    <hr>
+    <div class="internal-heading">
+        FOR "class"
+    </div><br>
+
+    <div class="content">"To target any of the class we use"." to address any class eg:-classname."</div>
+    <br>
+    <div class="brown">
+        this is the first div of class (brown)
+    </div>
+    <hr>
+    <div class="brown">
+        this is the second div of class (brown)
+    </div><br>
+    <hr>
+    <hr>
+    <div class="sub-heading">
+        <u><h3>We can use styling in multiple ways.</h3></u>
+    </div>
+    <div class="content">
+        <p1> such as in the above layout of the page the styles are inside of the style tag and are done inside the head tag which seems to be seperately written
+        </p1>
+    </div>
+    <div class="note">
+        <pre>BY USING STYLE TAG
+            eg:-.internal-heading {
+            color: red;
+            background-color: grey;
+            } 
+    whenever we use a class "internal-heading" the style gets on to the elements of the class
+    </pre>
+    </div>
+    <div class="content">
+        <p2> We can also use the styles in the besides of the tag</p2>
+        <h4 class="internal-heading"><u>INTERNAL CSS</u></h4>
+        <div class="note">
+            <pre>
+                By USING  inside the div tag
+                eg:-div class="type" style = "color : green ;"
+
+(so inside a div tag styling is done in this manner but in this way we will not be able to make a website with good manipulation) 
+            </pre>
+        </div>
+    We can also link a file (eg:-style.css) to extract styles from there
+    <div class="note"><pre>link rel="stylesheet" href="style.css" if we writhe this tag in the head then we can handle the styles of the webpage by that file with extension ".css"</pre></div>
+    <div>
+        <h1 class="heading">THIS ARE SOME TYPE OF SELECTIONS DONE IN CSS TO DO STYLING</h1>
+    <h3 class="sub-heading"><u>The Element Selector</u></h3>
+    <p>This is the selection of the particular element in the webpage when the element is targeted then all the contents in the element gets gets styled accordingly</p>
+    <h3><u>The Class Selector</u></h3>
+    <p>This is the selection of the particular class in the webpage when the class is targeted then all the contents in the class gets gets styled accordingly</p>
+    <h3><u>Id Selector</u></h3>
+    <p>
+        This is the selection of the particular Id in the webpage when the Id is targeted then all the contents in the Id gets gets styled accordingly
+        <br>
+        Note :- id should be used only once in the webpage
+        <br>
+        <br>
+        <h3><u>Group Selector</u></h3>
+       
+        <p> We can do classing in groups so that the group of tag can get a same style
+        </p>    
+<hr><pre><p1>
+WE CAN ADD AS MANY AS TAGS ID OR CLASS WHILE DEFINING THE RULES OF THE STYLE
+H1,H3,H5,DIV{
+COLOR : BLUE;
+}
+WE CAN SELECT ELEMENTS LIKE THIS ALSO
+P.red{
+Color : red ;
+}
+In this case all the paragraph of class red is made of color red all the rules also gets implemented
+
+*  is the selector which selects all the elements in the page
+*{
+margin : 0;
+padding: 0;
+}
+The style defined in the last rule will be applicable to the elements
+Like in the style sheet the color is red and in the style tag after it has the different style of same type then the style of the style tag will be considered
+</p1></pre>
+
+    </p>
+    </div>
+    <div>
+
+
+    </div>
+<HR>
+    </div> <div class="heading">
+        <u>
+            <h1>Ch-02 COLOR PROPERTIES</h1>
+        </u>
+    </div>
+    <div class="content"><p1>The "color" is used to give a rule for text color</p1></div><br>
+    <h3 class="sub-heading">TYPES OF COLOR CLASSIFICATION</h3>
+    <div class="content">
+        <p>RGB (RED,GREEN,BLUE) eg:-rgb(40,50,14)<BR>HEX code  eg:-#ff7180<br>HSL (HUE,SATURATION,LIGHTNESS) eg:-hsl(8%,15%,60%)
+        </p>
+        <p>These are the values used to specify the color for the text or the background based on the requirement <br> We also have "rgba" where a stands for alpha but these are used rarely.</p>
+        <H3>BACKGROUND COLOR</H3>
+        <div class="CONTENT">We use "background-color" to define the rules for background color <br>
+            such as background-color: black;
+            we get the background color as black.
+            <h3>BACKGROUND-IMAGE</h3>
+            <div class="content">
+                <p>We use "background-image" to set an image in the background
+                <pre class="note">
+For eg:-    body{
+    background-image: url("GOLD-FISH.jpeg");
+}
+                </pre>  
+                <h3>BACKGROUND-REPEAT</h3>
+                <div class="CONTENT"><p>We use this property to repeat the image in x and y directions
+                </p></div>  
+                </p>
+            </div>
+        </div>
+    </div>    
+</body>
+
+</html>

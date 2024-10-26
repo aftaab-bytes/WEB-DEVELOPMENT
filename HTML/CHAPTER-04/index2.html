@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <div>
+        <h4>THIS IS THE FORM FOR SPORTS REGISTRATION</h4>
+        <form action="form.php">
+            <input type="text" placeholder="Enter Your Name">
+            <h4>Your Section</h6>
+            <label for="CSE"><br>
+                <input type="radio" id="CSE" name="Section" class="SECTION">CSE
+            </label><br>
+            <label for="ECE">
+                <input type="radio" id="ECE" name="Section" class="SECTION">ECE
+            </label>
+            <br>
+            <label for="CSIT"><input type="radio" id="CSIT" name="Section" class="red">CSIT
+            </label><br><hr>
+            <h4>Sport You Want (choose any two)</h4>
+            <label for="cricket">
+                <input type="checkbox" id="cricket" class="sport">CRICKET
+            </label><br>
+            <label for="baseball">
+                <input type="checkbox" id="baseball" class="sport">BASEBALL
+            </label><br>
+        <label for="badmintion">
+            <input type="checkbox" id="badmintion">BADMINTON</label><br>
+            <h4>Write a valid reason :</h4>
+        <textarea name="intrest" id="intrest" cols="30" rows="5" placeholder="why do you want to join"></textarea><br> <hr>
+            <select name="AGE" id="AGE">
+                <option value="no car">Select Your Age</option>
+
+                <option value="17-18">17-18</option>
+                <option value="18-25">18-25</option>
+                <option value="25 above">25 above</option>
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>
